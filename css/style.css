@@ -1,0 +1,122 @@
+*, *::before, *::after {
+    /* Include padding and border in box's size calculation*/
+    box-sizing: border-box;
+}
+
+* {
+    /* Prevent grid and flex problems  */
+    min-width: 0;
+}
+
+body {
+    /* Make the body the same height as your viewport*/
+    min-height: 100dvh;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-bottom: 20px;
+}
+
+#producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+legend {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs, label[for="nombre"], label[for="precio"] {
+    display: flex;
+}
+
+button {
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#borrar {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 180px;
+}
+    
+#actualizar {
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 180px;
+}
